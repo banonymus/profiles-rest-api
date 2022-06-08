@@ -1,6 +1,6 @@
 from django.db import models
-from djanco.contrib.auth.models import AbstractBaseUser
-from djanco.contrib.auth.models import PermissionMixin
+from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
 
 
@@ -53,4 +53,3 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         """Return string representation of user"""
         return self.email
-@spyrosef
